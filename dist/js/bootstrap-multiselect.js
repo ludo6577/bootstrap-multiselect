@@ -197,7 +197,7 @@
                 if (options.length === 0) {
                     return this.nonSelectedText;
                 }
-                else if (this.allSelectedText && options.length == $('option', $(select)).length) {
+                else if (this.allSelectedText && options.length == $('option', $(select)).length && options.multiple) {
                     if (this.selectAllNumber) {
                         return this.allSelectedText + ' (' + options.length + ')';
                     }
